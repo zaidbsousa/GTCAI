@@ -1,1 +1,1 @@
-# GTCAI
+# Galaxy_AI

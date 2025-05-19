@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Galaxy AI Courses</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-details.css">
+    <link rel="stylesheet" href="sub-pages.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/galaxy-logo.png" alt="Galaxy Training Center Logo">
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                </button>
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="index.html#benefits" class="nav-link">Why Galaxy</a></li>
+                        <li><a href="index.html#courses" class="nav-link">Courses</a></li>
+                        <li><a href="index.html#about" class="nav-link">Benefits</a></li>
+                        <li><a href="index.html#contact" class="nav-link btn btn-primary">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Details Section -->
+    <section class="course-details-section">
+        <div class="container">
+            <div class="course-details-container">
+                <!-- Content will be dynamically populated by course-details.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header light">
+                <h2 class="section-title text-white">
+                    GET IN TOUCH
+                </h2>
+                <p style="color: white;" class="section-subtitle text-white">
+                    Ready to start your AI journey? Fill out the form below and we'll get back to you shortly.
+                </p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Tell us about your interests or questions" required></textarea>
+                    </div>
+                    
+                    <!-- Hidden inputs for course information -->
+                    <input type="hidden" id="courseId" name="courseId">
+                    <input type="hidden" id="courseName" name="courseName">
+                    <input type="hidden" id="courseCategory" name="courseCategory">
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-large">Submit Inquiry</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/galaxy-logo.png" alt="Galaxy Training Center Logo">
+                </div>
+                
+                <div class="footer-contact">
+                    <p><a href="tel:1700666000"><i class="fas fa-phone"></i> 1700 666 000</a></p>
+                    <p><a href="mailto:ai@galaxy.ps"><i class="fas fa-envelope"></i> ai@galaxy.ps</a></p>
+                    <p><a href="https://new.galaxy.ps/#/home"><i class="fas fa-globe"></i> www.galaxy.ps</a></p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/GalaxyPalestine/?_rdc=1&_rdr" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/galaxypalestine/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/galaxypalestine" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@galaxytrainingcenter6987" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2025 Galaxy Training Center. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="course-details.js"></script>
+    <script src="carousel.js"></script>
+</body>
+</html> 
